@@ -1,0 +1,56 @@
+body {
+    background-color: #ecf0f1;
+}
+.login-form {
+    height: 100%;
+}
+.container-panel {
+    margin-top: 30px;
+}
+.container-panel .segment,
+.container-panel .menu {
+    margin: 0;
+}
+.container-panel h2 {
+    margin: 10px 0;
+}
+.container-panel .ui.cards {
+    justify-content: flex-start
+}
+.container-panel .ui.card {
+    width: 171px;
+}
+.ui.button i {
+    margin: 0;
+}
+.marker-container {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border-radius: 100%;
+    /* border: 3px solid #3498db;
+    background-color: rgba(255,255,255,.9); */
+    position: relative;
+}
+.marker-container img {
+    width: 100%;
+}
+.marker-container span {
+    top: -25px;
+    left: 0;
+    border-radius: 5px;
+    padding: 1px 3px;
+    position: absolute;
+    background-color: rgba(255,255,255,.9);
+}
+.no-data {
+    width: 100%;
+}
+.export-segment {
+    display: block;
+    margin-bottom: 6px;
+}
+.desc {
+    display: block;
+    margin-bottom: 6px;
+}

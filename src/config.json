@@ -1,0 +1,4 @@
+{
+    "baseURL": "https://mapsurvey.petakita.org/api",
+    "baseBackend": "https://mapsurvey.petakita.org"
+}
