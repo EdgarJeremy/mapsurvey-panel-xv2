@@ -13,19 +13,23 @@ export default class Map extends React.Component {
         zoom: [12]
     }
 
+    componentDidMount() {
+
+    }
+
     updateMarker(markers = []) {
-        console.log(markers);
         this.setState({ markers });
     }
 
     onReady(map) {
-        map.setPaintProperty('tc-basemap-layer-land', 'fill-color', '#2f353a');
+        // map.setPaintProperty('tc-basemap-layer-land', 'fill-color', '#2f353a');
     }
 
     render() {
         const { markers, center, zoom } = this.state;
+        const { url } = this.props;
         return (
-            <MapGL center={center} zoom={zoom} {...this.props} style="https://manado.petakita.org/map/maps/public_v2?port=443&secured=true" containerStyle={{
+            <MapGL center={center} zoom={zoom} {...this.props} style={url} containerStyle={{
                 height: '500px'
             }} onStyleLoad={this.onReady.bind(this)}>
                 {markers.map((marker, i) => {

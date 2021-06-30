@@ -253,7 +253,6 @@ export default class SiteSub extends React.Component {
                     (
                         <div>
                             <Segment>
-                                <Divider />
                                 <h2>Manajemen Site</h2>
                                 <Divider />
                                 <Button animated='vertical' color="green" onClick={this._onAddPopup.bind(this)}>

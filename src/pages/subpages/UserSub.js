@@ -143,7 +143,6 @@ export default class UserSub extends React.Component {
                     (
                         <div>
                             <Segment>
-                                <Divider />
                                 <h2>Manajemen Pengguna</h2>
                                 <Divider />
                                 <Button animated="vertical" color="green" onClick={this._onAddPopup.bind(this)}>
