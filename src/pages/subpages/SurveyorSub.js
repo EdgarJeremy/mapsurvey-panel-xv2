@@ -13,8 +13,8 @@ export default class SurveyorSub extends React.Component {
         const { socket, me } = this.props;
         this.setState({ map_id: me.rent.map_id });
         if (socket) {
-            socket.emit('ask_points');
             socket.on('update_points', (data) => {
+                console.log(data);
                 if (this.mMap) {
                     this.mMap.updateMarker(data);
                 }
